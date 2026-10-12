@@ -1,0 +1,12 @@
+services:
+  joytag:
+    image: ghcr.io/bungabear/joytag-server:latest
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:18001:8000"
+    environment:
+      ORT_INTRA_THREADS: "4"
+      ORT_INTER_THREADS: "1"
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=256m

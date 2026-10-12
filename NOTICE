@@ -1,0 +1,14 @@
+JoyTag Server
+Copyright 2026 bungabear
+
+This project provides an independent HTTP wrapper for the JoyTag ONNX model.
+Image preprocessing follows the JoyTag project:
+https://github.com/fpgaminer/joytag
+
+The Docker image includes the official fancyfeast/joytag model, configuration,
+and tag vocabulary, distributed under the Apache License, Version 2.0:
+https://huggingface.co/fancyfeast/joytag
+Model revision: 6b7f16331a6ccf0fdce37d5a9564715f6e772b22
+The model artifacts are unchanged; the server code implements the HTTP API.
+
+The Apache License text is included in LICENSE.
